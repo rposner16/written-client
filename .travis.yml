@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: GQ4iJGkzFjBs9zLWPK2cA4Al/h6CnCNLcvsRytHJzQousOKKLxksDtBBzHr4CenllWFvwJy6qH452WcgB1kr463C47GMJDsrbskQJ8/x/KN5DEKTO1X5Umw+nHooQzPZx8IQpSv+/UAmQ+3cYpKgTtoksmfABWrsEoB2mMQmIDZXRrIvhmacjYPhLqYzr+kO7viY7MTkl6YKbLSjQPhLXmskQZE7vM2FDU+1MDm53kTpp9Sn1a0oXFugs/E7Ggy4565eR1C1ormpZfahRYMeCSwlzWhXub9dNSfxEwnaRyhVRRdryqkYhmM3UYFt9FY2YxgsQjT+dhg15VmjZkPjN0YCvmjKITuLab2nfzLn79L4VXBj5ew1OYV+qHkHcuthnffqKM71LSllHOqhcTloecHzDiTw/+pE3Sp1N26VinIY2hyRwRyNHs6KFybnbzZi3Ii42whdIKBTKil/E1+jwTvITg1ISBECuZF8GcPYyLOFNxvdnFjr93W2QZB2bjjdec+1LAijSXJXFFkfp9wX18BgDmRVxbuS0/EqWuVqGXGo5O6+Kswj7NEIpJujW2BGvdwpa5CbPCqyPJ/CB6Lw6O2rG3dEN4rHlx23mvafBK7jtTw7H/nbC6gObhARGMFYX8i9U7sMD9cCLzdC+aRle++c3dzjaZSiiS+Xnekj8bM=
+  app: intense-citadel-82749
+  on:
+    repo: rposner16/written-client
